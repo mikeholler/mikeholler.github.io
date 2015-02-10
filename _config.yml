@@ -11,7 +11,8 @@ theme:
   description: "A Mobile Developer's Notes" # used by search engines
   
   # Header and footer text
-  header_text: A Mobile Developer's Notes
+  header_text: >
+   <p>A Mobile Developer's Notes</p><p>by Michael Holler</p>
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
   
