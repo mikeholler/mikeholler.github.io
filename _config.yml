@@ -12,7 +12,7 @@ theme:
   
   # Header and footer text
   header_text: >
-   <p>A Mobile Developer's Notes</p><p>by Michael Holler</p>
+   <p><strong>A Mobile Developer's Notes</strong></p><p>by Michael Holler</p>
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
   
