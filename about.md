@@ -5,8 +5,16 @@ permalink: /about/
 feature-img: "img/sample_feature_img_2.png"
 ---
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+I'm Mike Holler, software engineer and lover of cooking, tea, and travelling.
 
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
+Although I have experience in several different areas of software development,
+I've been disproportionately drawn to Android development because of the
+challenges it presents, its ability to reach many people, and the quality of the
+ecosystem as a whole.
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+I write primarily about aspects of software development that extend to Android,
+but don't be surprised if you find me writing about software best-practices,
+web frameworks, databases, software education, etc.
+
+If you'd like to contact me, feel free to reach out to one of my social media
+accounts listed at the top of the page.
