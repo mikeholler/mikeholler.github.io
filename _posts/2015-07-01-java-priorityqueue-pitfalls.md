@@ -4,12 +4,12 @@ title: Java PriorityQueue Pitfalls
 ---
 
 One thing I've always loved about Java is the `java.util` and `java.util.concurrent` data structures.
-They're predictable, stable, and multiple implemetations of each data structure are often available.
+They're predictable, stable, and multiple implementations of each data structure are often available.
 Still, every so often I fall victim to a "gotcha."
 Java's `PriorityQueue` in particular makes it very easy to shoot oneself in the foot, an unusual trait for a Java standard library class.
 
-Recently, I found myself working with a particulary difficult API that returns real-time, timestamped data out of order occassionally.
-Though annoying, the fix we easy enough: build up a buffer with API results, ordered by timestamp, and only begin consuming results once the buffer is large enough to eradicate out-of-order results. Enter the `PriorityQueue`.
+Recently, I found myself working with a particularly difficult API that returns real-time, timestamped data out of order occasionally.
+Though annoying, the fix was easy enough: build up a buffer with API results, ordered by timestamp, and only begin consuming results once the buffer is large enough to eradicate out-of-order results. Enter the `PriorityQueue`.
 
 A PriorityQueue is the perfect tool for this job because it lets you how you want to queue to be arranged via `Comparable` elements or by providing a custom `Comparator`.
 The result objects I work with have no natural ordering, so I had to seek out the latter option:
@@ -59,8 +59,8 @@ public final class BufferedResultListener
 
 Given the use of Comparator and PriorityQueue together, it seems reasonable to assume the items in the queue are ordered.
 The whole point of a PriorityQueue, after all, is to return the contained object with the highest priority when remove(), poll(), element(), or peek() are called (the standard Queue accessor methods).
-Similarly reasonable is the assumption that iterating over a PriorityQueue thusly returns objects with highest priority first.
-There are a number of scenarios where one might want to iterate over a PriorityQueue, and it seems intuitive that this iteration should happen in a manner consistent with how the contained items might come out of the queue, their prioirty order.
+Similarly reasonable is the assumption that iterating over a PriorityQueue thus returns objects with highest priority first.
+There are a number of scenarios where one might want to iterate over a PriorityQueue, and it seems intuitive that this iteration should happen in a manner consistent with how the contained items might come out of the queue, their priority order.
 
 ```java
 /**
